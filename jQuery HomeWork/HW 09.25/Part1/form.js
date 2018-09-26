@@ -13,9 +13,18 @@ function addForm(parent_selector){
     $('label:last-child').append('<input>');
     $('label:last-child input').attr('type', 'checkbox').attr('id', 'done');
     
-
+    var check;
+    
     $('form').append('<button>'); 
     $('button').addClass('btn green').text('save');
+    $('button').click(function(){
+        if($('#done').is(':checked')){
+            check = 'cheked!';
+        }else{
+            check = 'not checker :(';
+        }
+        alert('Task title: ' + $('#title').val() + '\nDate: ' + $('#date').val() + '\nDone: ' + check);
+    });
 }
 
 addForm('body');
