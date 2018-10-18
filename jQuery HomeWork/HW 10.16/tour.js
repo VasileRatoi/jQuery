@@ -43,13 +43,12 @@ function generatePager(){
 function arrows(){
     var $page = $('.w3-green').text();
     $('.next').on('click', function(){ 
-        
         $(this).parent().find('a').removeClass('w3-green');
-        $(`.pages:nth-child(${$page})`).addClass('w3-green');
+        $(`.pages`).eq($page).addClass('w3-green');
         
         if( $page == 10 ){
             $page = 0;
-            $(`.pages:nth-child(${$page})`).addClass('w3-green');
+            $(`.pages`).eq($page).addClass('w3-green');
         }
         $page++;
         showPage($page);
