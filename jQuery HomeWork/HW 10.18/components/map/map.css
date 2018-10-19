@@ -1,0 +1,19 @@
+
+body{
+    background-color: #333;
+}
+
+#map{
+    border: 10px solid #555;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+#map div{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #666;
+}
