@@ -2,8 +2,6 @@ class Map{
     constructor(w,h){
         this.w = w;
         this.h = h;
-    }
-    render(){
         var divs = [];
         for(var y = 0; y < this.h; y++){
             for(var x = 0; x < this.w; x++){
@@ -16,7 +14,9 @@ class Map{
             }
         }
         $('#map').append( divs );
-    }
+        
+        this.$ = $('#map'); // Pastram legatura cu div-ul in care se deseneaza harta
+    }   
 }
 
 
