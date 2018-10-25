@@ -1,0 +1,43 @@
+.kalabok {
+    background-image: url(kalabok.png);
+}
+
+.kalabok.right::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-right: 5px dotted greenyellow;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}
+
+.kalabok.left::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-left: 5px dotted greenyellow;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}
+
+.kalabok.up::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-top: 5px dotted greenyellow;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}
+
+.kalabok.down::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-bottom: 5px dotted greenyellow;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}

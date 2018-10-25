@@ -1,0 +1,43 @@
+.mike-duze {
+    background-image: url(devil.png);
+}
+
+.mike-duze.right::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-right: 5px dotted red;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}
+
+.mike-duze.left::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-left: 5px dotted red;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}
+
+.mike-duze.up::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-top: 5px dotted red;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}
+
+.mike-duze.down::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-bottom: 5px dotted red;
+    border-radius: 100%;
+    transform: translate(-50px, -50px)
+}
